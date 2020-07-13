@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "user selects origin and destination and requests an uber, canceling the request afterwards",
+        "description": "",
+        "id": "requesting-an-uber-using-a-regular-browser;user-selects-origin-and-destination-and-requests-an-uber,-canceling-the-request-afterwards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20453138700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a user logs into uber website",
+            "match": {
+              "location": "Steps.a_user_logs_into_uber_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2414458600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "chooses his origin point as \"R. Afonso Cavalcanti, 455\", \"Cidade Nova\" and destination as \"R. Moncorvo Filho, 8\", \"Centro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "R. Afonso Cavalcanti, 455",
+                  "offset": 29
+                },
+                {
+                  "val": "Cidade Nova",
+                  "offset": 58
+                },
+                {
+                  "val": "R. Moncorvo Filho, 8",
+                  "offset": 91
+                },
+                {
+                  "val": "Centro",
+                  "offset": 115
+                }
+              ],
+              "location": "Steps.chooses_his_point_and(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8864259700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "selects uber default options, requests a car and verifies that \"Requesting your ride\" is displayed and cancels the request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Requesting your ride",
+                  "offset": 64
+                }
+              ],
+              "location": "Steps.selects_uber_and_requests_a_car(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Requesting an uber using a regular Browser",
+    "description": "",
+    "id": "requesting-an-uber-using-a-regular-browser",
+    "keyword": "Feature",
+    "uri": "UberRoutine.feature"
+  }
+]
